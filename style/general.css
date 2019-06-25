@@ -90,7 +90,28 @@ a {
 
 #menu-btn {
   position: absolute;
-  top: 0;
+  top: 30px;
+  left: 30px;
+}
+
+.menu-btn-container {
+  cursor: pointer;
+}
+
+.menu-btn-line {
+  height: 3px;
+  width: 23px;
+  margin-bottom: 9px;
+  background: #333;
+}
+
+.menu-btn-container:hover .menu-btn-line {
+  background: #ebd300;
+  margin-bottom: 13px;
+}
+
+.menu-btn-line:last-child {
+  margin-bottom: 0;
 }
 
 #page-nav {
