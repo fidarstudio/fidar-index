@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+#left-panel-container {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  display: inline-block;
+  /* background: #ccc; */
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100%;
+}
+
+#left-panel {
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+  #left-panel-container {
+    width: 50px;
+  }
+  #left-panel {
+    width: 50px;
+  }
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  transform: scaleY(0.5) scaleX(0.5);
+}
+
+#logo:hover {
+  transform: scaleY(0.5) scaleX(0.5) rotateZ(360deg);
+}
+
+#social-media {
+  transform: rotateZ(-90deg);
+  position: absolute;
+  bottom: 0;
+}
+
+#right-panel-container {
+  position: fixed;
+  right: 0;
+  display: inline-block;
+  /* background: #ccc; */
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100%;
+}
+
+#right-panel {
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+  #right-panel-container {
+    width: 50px;
+  }
+  #right-panel {
+    width: 50px;
+  }
+}
+
+#menu-btn {
+  position: absolute;
+  top: 0;
+}
+
+#page-nav {
+  position: absolute;
+  top: 50vh;
+  left: 50px;
+}
+
+.page-number-section {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.page-number {
+  display: none;
+  margin: 0 auto;
+  cursor: default;
+}
+
+.page-number-dot {
+  width: 12px;
+  height: 12px;
+  background: #555;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.page-number-line {
+  width: 2px;
+  height: 34px;
+  background: #555;
+  margin-left: -4px;
+  display: none;
+  margin-top: 5px;
+}
+
+.page-number-section:hover {
+  height: 70px;
+}
+
+.page-number-section:hover .page-number-dot {
+  background: #ebd300;
+}
+
+.page-number-section:hover .page-number-line {
+  display: inline-block;
+}
+
+.page-number-section:hover .page-number {
+  display: inline-block;
+}
+
+#call-us {
+  transform: rotateZ(-90deg);
+  position: absolute;
+  bottom: 60px;
+  /* left: 11px; */
+  font-weight: 900;
+  letter-spacing: 0px;
+  font-size: 24px;
+  width: 100px;
+}

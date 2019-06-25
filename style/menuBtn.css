@@ -1,0 +1,250 @@
+/* Toggle functionality */
+#toggle {
+  position: absolute;
+  left: -100%;
+  top: -100%;
+}
+
+#toggle:focus ~ .toggle-container .button-toggle {
+  box-shadow: 0 0 0 8px #ebd40088, inset 0 0 0 20px #ebd40088;
+}
+
+#toggle:checked ~ .toggle-container .button-toggle {
+  box-shadow: 0 0 0 1800px #ebd300, inset 0 0 0 20px #ebd300;
+}
+
+#toggle:checked ~ .toggle-container .button-toggle:hover {
+  box-shadow: 0 0 0 1800px #ebd300, inset 0 0 0 20px #ebd300, 0 0 0 8px #ebd300, inset 0 0 0 20px #ebd300;
+}
+
+#toggle:checked ~ .toggle-container .button-toggle:before {
+  -webkit-transform: translateY(-50%) rotate(45deg) scale(1);
+      -ms-transform: translateY(-50%) rotate(45deg) scale(1);
+          transform: translateY(-50%) rotate(45deg) scale(1);
+}
+
+#toggle:checked ~ .toggle-container .button-toggle:after {
+  -webkit-transform: translateY(-50%) rotate(-45deg) scale(1);
+      -ms-transform: translateY(-50%) rotate(-45deg) scale(1);
+          transform: translateY(-50%) rotate(-45deg) scale(1);
+}
+
+#toggle:checked:focus ~ .toggle-container .button-toggle {
+  box-shadow: 0 0 0 1800px #ebd300, inset 0 0 0 20px #ebd300, 0 0 0 8px #ebd300, inset 0 0 0 20px #ebd300;
+}
+
+#toggle:checked ~ .nav {
+  margin-bottom: 100px;
+  pointer-events: auto;
+  -webkit-transform: translate(50px, 50px);
+      -ms-transform: translate(50px, 50px);
+          transform: translate(50px, 50px);
+}
+
+#toggle:checked ~ .nav .nav-item {
+  color: #EC7263;
+  letter-spacing: 0;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 0;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: 0.5s, opacity 0.1s;
+  transition: 0.5s, opacity 0.1s;
+}
+
+#toggle:checked ~ .nav .nav-item:nth-child(1) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+#toggle:checked ~ .nav .nav-item:nth-child(1):before {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+#toggle:checked ~ .nav .nav-item:nth-child(2) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+#toggle:checked ~ .nav .nav-item:nth-child(2):before {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+#toggle:checked ~ .nav .nav-item:nth-child(3) {
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+
+#toggle:checked ~ .nav .nav-item:nth-child(3):before {
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+
+#toggle:checked ~ .nav .nav-item:nth-child(4) {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+#toggle:checked ~ .nav .nav-item:nth-child(4):before {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+#toggle:checked ~ .nav .nav-item:before {
+  opacity: 0;
+}
+
+/* Toggle button */
+.button-toggle {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 25px;
+  /* margin-top: -30px; */
+  /* margin-left: 27px; */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.button-toggle:hover {
+  box-shadow: 0 0 0 8px #ebd40088, inset 0 0 0 20px #ebd40088;
+}
+
+.button-toggle:before, .button-toggle:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #EC7263;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-toggle:before {
+  -webkit-transform: translateY(-50%) rotate(45deg) scale(0);
+      -ms-transform: translateY(-50%) rotate(45deg) scale(0);
+          transform: translateY(-50%) rotate(45deg) scale(0);
+}
+
+.button-toggle:after {
+  -webkit-transform: translateY(-50%) rotate(-45deg) scale(0);
+      -ms-transform: translateY(-50%) rotate(-45deg) scale(0);
+          transform: translateY(-50%) rotate(-45deg) scale(0);
+}
+
+/* Menu */
+.nav {
+  display: inline-block;
+  margin: 25px 25px 20px;
+  pointer-events: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  float: right;
+  clear: both;
+  color: transparent;
+  font-size: 14px;
+  letter-spacing: -6.2px;
+  height: 7px;
+  line-height: 7px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-transform: scaleY(0.2);
+      -ms-transform: scaleY(0.2);
+          transform: scaleY(0.2);
+  -webkit-transition: 0.5s, opacity 1s;
+  transition: 0.5s, opacity 1s;
+}
+
+.nav-item:nth-child(1) {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.nav-item:nth-child(1):before {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.nav-item:nth-child(2) {
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+
+.nav-item:nth-child(2):before {
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+
+.nav-item:nth-child(3) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(3):before {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(4) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.nav-item:nth-child(4):before {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.nav-item:nth-child(1) {
+  letter-spacing: -8px;
+}
+
+.nav-item:nth-child(2) {
+  letter-spacing: -7px;
+}
+
+.nav-item:nth-child(n + 4) {
+  letter-spacing: -8px;
+  margin-top: -7px;
+  opacity: 0;
+}
+
+.nav-item:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  -webkit-transform: translateY(-50%) scaleY(5);
+      -ms-transform: translateY(-50%) scaleY(5);
+          transform: translateY(-50%) scaleY(5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+
+/*
+darker: #ebd300
+lighter: #ffe500
+
+*/
