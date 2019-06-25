@@ -52,9 +52,14 @@ a {
 }
 
 #social-media {
-  transform: rotateZ(-90deg);
+  transform: rotateZ(180deg);
   position: absolute;
   bottom: 0;
+  width: 50px;
+}
+
+.social-media-icon {
+  border: 1px solid red;
 }
 
 #right-panel-container {
