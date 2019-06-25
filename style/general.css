@@ -46,10 +46,6 @@ a {
   transform: scaleY(0.5) scaleX(0.5);
 }
 
-#logo:hover {
-  transform: scaleY(0.5) scaleX(0.5) rotateZ(360deg);
-}
-
 #social-media {
   /* transform: rotateZ(180deg); */
   position: absolute;
