@@ -19,7 +19,6 @@ a {
   position: fixed;
   left: 0;
   display: inline-block;
-  /* background: #ccc; */
   top: 0;
   bottom: 0;
   width: 100px;
@@ -52,21 +51,37 @@ a {
 }
 
 #social-media {
-  transform: rotateZ(180deg);
+  /* transform: rotateZ(180deg); */
   position: absolute;
-  bottom: 0;
-  width: 50px;
+  bottom: 30px;
+  left: 30px;
 }
 
 .social-media-icon {
-  border: 1px solid red;
+  position: relative;
+}
+
+.social-media-icon-desc {
+  display: none;
+  position: absolute;
+  left: 50px;
+  width: 110px;
+  top: 12px;
+  background: #444;
+  color: #ddd;
+  padding: 2px 5px;
+  opacity: 0.8;
+}
+
+.social-media-icon:hover .social-media-icon-desc {
+  display: inline-block;
+  animation: socialmediadescanim 0.5s ease-in-out;
 }
 
 #right-panel-container {
   position: fixed;
   right: 0;
   display: inline-block;
-  /* background: #ccc; */
   top: 0;
   bottom: 0;
   width: 100px;

@@ -1,0 +1,10 @@
+@keyframes socialmediadescanim {
+  from {
+    left: 40px;
+    opacity: 0;
+  }
+  to {
+    left: 50px;
+    opacity: 0.8;
+  }
+}
