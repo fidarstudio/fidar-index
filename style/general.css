@@ -221,7 +221,6 @@ a {
   margin-top: 100px;
   margin-bottom: 100px;
   box-shadow: 0 0 75px rgba(0, 0, 0, .3);
-  background: #f1f1f1;
 }
 
 .section:first-child {
@@ -229,4 +228,4 @@ a {
 }
 .section:last-child {
   margin-bottom: 50px;
-
+}
