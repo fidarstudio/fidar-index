@@ -17,3 +17,12 @@
     opacity: 1;
   }
 }
+
+@keyframes pagenumberdescanim {
+  from {
+    left: -50px;
+  }
+  to {
+    left: -60px;
+  }
+}

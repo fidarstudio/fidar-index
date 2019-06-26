@@ -119,6 +119,7 @@ a {
   margin-bottom: 8px;
   text-align: center;
   cursor: pointer;
+  position: relative;
 }
 
 .page-number {
@@ -140,18 +141,30 @@ a {
 }
 
 .page-number-line {
-  width: 2px;
+  width: 1.2px;
   height: 34px;
   background: #555;
-  margin-left: -10px;
+  margin-left: -8px;
   display: none;
   margin-top: 5px;
   box-shadow: -3px 3px 5px rgba(0, 0, 0, .5);
   cursor: pointer;
 }
 
+.page-number-desc {
+  position: absolute;
+  top: -8px;
+  left: -60px;
+  background: #555;
+  color: #ddd;
+  padding: 1px 4px;
+  display: none;
+}
+
 .page-number-section:hover {
   height: 70px;
+  margin-top: -7px;
+  margin-bottom: 11px;
 }
 
 .page-number-section:hover .page-number-dot {
@@ -165,6 +178,11 @@ a {
 
 .page-number-section:hover .page-number {
   display: inline-block;
+}
+
+.page-number-section:hover .page-number-desc {
+  display: inline-block;
+  animation: pagenumberdescanim 0.3s ease-in-out;
 }
 
 #call-us {
