@@ -178,6 +178,10 @@ a {
   animation: pagenumberlineanim 0.3s ease-in-out;
 }
 
+.page-number-section:hover:last-child .page-number-line {
+  display: none;
+}
+
 .page-number-section:hover .page-number {
   display: inline-block;
 }
@@ -217,3 +221,4 @@ a {
   margin-bottom: 50px;
 }
 
+/* temp: */
