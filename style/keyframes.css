@@ -20,9 +20,9 @@
 
 @keyframes pagenumberdescanim {
   from {
-    left: -50px;
+    left: -60px;
   }
   to {
-    left: -60px;
+    left: -50px;
   }
 }
