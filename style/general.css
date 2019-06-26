@@ -94,13 +94,13 @@ a {
 .menu-btn-line {
   height: 3px;
   width: 23px;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
   background: #333;
 }
 
 .menu-btn-container:hover .menu-btn-line {
   background: #ebd300;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 
 .menu-btn-line:last-child {
@@ -109,7 +109,7 @@ a {
 
 #page-nav {
   position: absolute;
-  top: 50vh;
+  top: 40vh;
   left: 50px;
 }
 
@@ -118,19 +118,25 @@ a {
   height: 16px;
   margin-bottom: 8px;
   text-align: center;
+  /* border: 1px solid red; */
+  cursor: pointer;
 }
 
 .page-number {
   display: none;
-  margin: 0 auto;
+  margin: 0 0 0 -6px;
   cursor: default;
+  font-weight: 900;
+  font-size: 0.95em;
+  cursor: pointer;
 }
 
 .page-number-dot {
-  width: 12px;
-  height: 12px;
-  background: #555;
+  width: 8px;
+  height: 8px;
+  background: #222;
   border-radius: 50px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, .5);
   cursor: pointer;
 }
 
@@ -138,9 +144,11 @@ a {
   width: 2px;
   height: 34px;
   background: #555;
-  margin-left: -4px;
+  margin-left: -10px;
   display: none;
   margin-top: 5px;
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, .5);
+  cursor: pointer;
 }
 
 .page-number-section:hover {
@@ -153,6 +161,7 @@ a {
 
 .page-number-section:hover .page-number-line {
   display: inline-block;
+  animation: pagenumberlineanim 0.3s ease-in-out;
 }
 
 .page-number-section:hover .page-number {
@@ -163,7 +172,6 @@ a {
   transform: rotateZ(-90deg);
   position: absolute;
   bottom: 60px;
-  /* left: 11px; */
   font-weight: 900;
   letter-spacing: 0px;
   font-size: 24px;
