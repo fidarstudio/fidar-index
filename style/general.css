@@ -9,6 +9,11 @@
   transition: 0.3s;
 }
 
+body {
+  /* background-image: linear-gradient(to right,#ff8a00,#4a3e42); */
+
+}
+
 a {
   text-decoration: none;
 }
@@ -204,14 +209,19 @@ a {
 /* right side end */
 
 /* general sections styles: */
+#main-body {
+  /* background-image: linear-gradient(to right,#ff8a00,#4a3e42); */
+}
+
 .section {
-  border: 1px solid #ff9000;
-  width: 88vw;
+  /* border: 1px solid #ff9000; */
+  width: 89vw;
   height: 90vh;
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
   box-shadow: 0 0 75px rgba(0, 0, 0, .3);
+  background: #f1f1f1;
 }
 
 .section:first-child {
@@ -219,4 +229,4 @@ a {
 }
 .section:last-child {
   margin-bottom: 50px;
-}
+
