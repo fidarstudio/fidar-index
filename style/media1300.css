@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1300px) {
+  #left-panel-container {
+    width: 50px;
+  }
+  #left-panel {
+    width: 50px;
+  }
+  #right-panel-container {
+    width: 50px;
+  }
+  #right-panel {
+    width: 50px;
+  }
+}

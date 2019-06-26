@@ -31,15 +31,6 @@ a {
   height: 100%;
 }
 
-@media only screen and (max-width: 1300px) {
-  #left-panel-container {
-    width: 50px;
-  }
-  #left-panel {
-    width: 50px;
-  }
-}
-
 #logo {
   position: absolute;
   top: 0;
@@ -88,15 +79,6 @@ a {
   position: relative;
   width: 100px;
   height: 100%;
-}
-
-@media only screen and (max-width: 1300px) {
-  #right-panel-container {
-    width: 50px;
-  }
-  #right-panel {
-    width: 50px;
-  }
 }
 
 #menu-btn {
