@@ -57,3 +57,4 @@ $('.pagenav a').on('click', function (e) {
 
 // COMMENTS
 // add overflow hidden to body when modal is open
+// width font size and height: vh vw
