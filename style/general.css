@@ -232,36 +232,39 @@ a {
   text-align: right;
 }
 
+.wraped .dot {
+  width: 12px;
+  height: 12px;
+  
+}
+
 .section-header {
-  /* font-weight: 900;
+  font-weight: 900;
   font-size: 60px;
-  margin-right: 20px; */
+  margin-right: 20px;
 }
 
 .section-header span {
-  /* display: block;
-  margin-right: 40px; */
+  display: block;
+  margin-right: 40px;
 }
 
 .section-body {
-  /* margin-top: 180px;
+  margin-top: 180px;
   margin-bottom: 180px;
   width: 300px;
-  margin-left: 1100px; */
+  margin-left: 1100px;
 }
 
 .section-button {
-  /* margin-left: 1000px;
+  margin-left: 1000px;
   width: 400px;
   height: 80px;
   box-shadow: 0 20px 50px -20px rgba(0, 0, 0, .5);
-  border: 1px solid #ebd300; */
-}
-
-.section-button button {
-  /* width: 400px;
-  height: 80px;
-  background: #ebd300; */
+  border: 1px solid #ebd300;
+  background: #ebd300;
+  text-align: center;
+  padding-top: 28px; 
 }
 
 .section-button:hover {
