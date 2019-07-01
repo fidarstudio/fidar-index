@@ -83,6 +83,11 @@ $('.pagenav a').on('click', function (e) {
   }
 });
 
+setTimeout(() =>{
+  document.querySelector('#section-' + activeId).classList.remove('deactive-section');
+  document.querySelector('#section-' + activeId).classList.add('active-section');
+}, 2000);
+
 // COMMENTS
 // add overflow hidden to body when modal is open
 // width font size and height: vh vw

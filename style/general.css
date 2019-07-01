@@ -479,25 +479,24 @@ a {
 }
 /* call us modal end */
 
+.deactive-section .animate {
+  opacity: 0;
+}
+
 .active-section .animate {
-  animation: comeRight 0.5s ease-in;
   opacity: 1;
 }
-
 .active-section .anim-1 {
-  animation-delay: 0;
+  animation: comeRight 0.5s ease-in;
 }
-
 .active-section .anim-2 {
-  animation-delay: 0.3s;
+  animation: comeRight 0.5s ease-in;
 }
-
 .active-section .anim-3 {
-  animation-delay: 0.6s;
+  animation: comeRight 0.5s ease-in;
 }
-
 .active-section .anim-4 {
-  animation-delay: 0.8s;
+  animation: comeRight 0.5s ease-in;
 }
 
 @keyframes comeRight {
