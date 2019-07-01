@@ -1,4 +1,5 @@
 // // VARS
+const cornerDots = document.querySelectorAll('.dot');
 const menuBtn = document.querySelector('#menu-btn');
 const dots = document.querySelectorAll('.page-number-section');
 const menuModal = document.querySelector('#menu-modal');
@@ -11,6 +12,9 @@ menuIsOn = false;
 // EVENT LISTENERS
 menuBtn.addEventListener('click', openMenuModal);
 menuModalXbtn.addEventListener('click', closeMenuModal);
+for(let dot of cornerDots) {
+  dot.addEventListener('click', showMount);
+}
 
 // FUNCTIONS
 function whereIsActive() {
@@ -29,6 +33,10 @@ function closeMenuModal() {
   setTimeout(() => {
     menuModal.classList.add('menu-modal-close-d');
   },500);
+}
+
+function showMount() {
+  
 }
 
 // FUNCTIONS TO RUNB ON PAGE LOAD:
