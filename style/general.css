@@ -270,21 +270,18 @@ a {
   right: 14vw;
   width: 20.8vw;
   height: 8.25vh;
+  font-size: 2.5vh;
   box-shadow: 0 20px 50px -20px rgba(0, 0, 0, .5);
   background: #ebd300;
   text-align: center;
-  padding-top: 2.88vh; 
+  padding-top: 2.2vh; 
   cursor: pointer;
-}
-
-.section-button:hover {
-  /* margin-top: 10px; */
 }
 
 .section-right {
   position: absolute;
   top: 30vh;
-  left: 55vh;
+  left: 40vw;
 }
 
 .section-backtext {
@@ -292,13 +289,14 @@ a {
   font-size: 50vh;
   opacity: 0.1;
   letter-spacing: -20px;
-  top: -10vh;
+  top: vh;
   z-index: -1;
 }
 
 .section-backtext span {
   display: block;
-  margin-top: -30vh;
+  font-size: 30vh;
+  margin-top: -40vh;
   margin-left: -60vw;
 }
 
@@ -366,7 +364,7 @@ a {
 
 .x-btn .line {
   width: 45px;
-  height: 2px;
+  height: 1px;
 }
 
 .x-btn .line:first-child {
@@ -380,7 +378,7 @@ a {
 }
 
 .x-btn:hover .line:first-child {
-  transform: rotateZ(0) translateX(3px) translateY(27px);
+  transform: rotateZ(0) translateX(3px) translateY(25px);
   background: #ddd;
 }
 
@@ -481,16 +479,34 @@ a {
 }
 /* call us modal end */
 
-.active-section:nth-child(1) .animate {
+.active-section .animate {
   animation: comeRight 0.5s ease-in;
-  color: red;
+  opacity: 1;
+}
+
+.active-section .anim-1 {
+  animation-delay: 0;
+}
+
+.active-section .anim-2 {
+  animation-delay: 0.3s;
+}
+
+.active-section .anim-3 {
+  animation-delay: 0.6s;
+}
+
+.active-section .anim-4 {
+  animation-delay: 0.8s;
 }
 
 @keyframes comeRight {
   from {
     margin-right: -20px;
+    opacity: 0;
   }
   to {
     margin-right: 0;
+    opacity: 1;
   }
 }
