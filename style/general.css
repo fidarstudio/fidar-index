@@ -490,13 +490,13 @@ a {
   animation: comeRight 0.5s ease-in;
 }
 .active-section .anim-2 {
-  animation: comeRight 0.5s ease-in;
+  animation: comeRight 0.8s ease-in;
 }
 .active-section .anim-3 {
-  animation: comeRight 0.5s ease-in;
+  animation: comeRight 1.1s ease-in;
 }
 .active-section .anim-4 {
-  animation: comeRight 0.5s ease-in;
+  animation: comeRight 1.3s ease-in;
 }
 
 @keyframes comeRight {

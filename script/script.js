@@ -24,7 +24,8 @@ for(let dot of cornerDots) {
 
 // FUNCTIONS
 function whereIsActive() {
-  // console.log(dots);
+  document.querySelector('#section-' + activeId).classList.remove('deactive-section');
+  document.querySelector('#section-' + activeId).classList.add('active-section');
 }
 
 function openMenuModal() {
@@ -60,7 +61,7 @@ function showCallUs() {
 }
 
 // FUNCTIONS TO RUNB ON PAGE LOAD:
-whereIsActive(1);
+whereIsActive(activeId);
 
 // TEMP
 const hamid = 'hamid';
@@ -82,11 +83,6 @@ $('.pagenav a').on('click', function (e) {
       },3000);
   }
 });
-
-setTimeout(() =>{
-  document.querySelector('#section-' + activeId).classList.remove('deactive-section');
-  document.querySelector('#section-' + activeId).classList.add('active-section');
-}, 2000);
 
 // COMMENTS
 // add overflow hidden to body when modal is open
