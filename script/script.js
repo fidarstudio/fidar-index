@@ -19,12 +19,16 @@ function whereIsActive() {
 
 function openMenuModal() {
   menuModal.classList.add('menu-modal-open');
-  menuModal.classList.remove('menu-modal-close');
+  menuModal.classList.remove('menu-modal-close-a');
+  menuModal.classList.remove('menu-modal-close-d');
 }
 
 function closeMenuModal() {
-  menuModal.classList.add('menu-modal-close');
+  menuModal.classList.add('menu-modal-close-a');
   menuModal.classList.remove('menu-modal-open');
+  setTimeout(() => {
+    menuModal.classList.add('menu-modal-close-d');
+  },500);
 }
 
 // FUNCTIONS TO RUNB ON PAGE LOAD:
