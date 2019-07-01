@@ -228,26 +228,56 @@ a {
   margin: 5vh auto;
   box-shadow: 0 0 75px rgba(0, 0, 0, .3);
   padding: 60px 60px;
+  text-align: right;
 }
 
 .section-header {
-  
+  font-weight: 900;
+  font-size: 60px;
+  margin-right: 20px;
 }
 
 .section-header span {
-  
+  display: block;
+  margin-right: 40px;
 }
 
 .section-body {
-
+  margin-top: 180px;
+  margin-bottom: 180px;
+  width: 300px;
+  margin-left: 1100px;
 }
 
 .section-button {
+  width: 400px;
+  height: 80px;
+  background: #ebd300;
+  text-align: center;
+  padding-top: 30px;
+  margin-left: 1000px;
+  cursor: pointer;
+}
 
+.section-right {
+  /* margin-top: -500px; */
 }
 
 .section-backtext {
 
+}
+
+.active-section .section-button {
+  animation: namename 0.3s ease-in;
+}
+
+@keyframes namename {
+  from {
+    margin-left: 960px;
+  }
+  to {
+    margin-left: 1000px;
+  }
 }
 
 /* .section:first-child {
