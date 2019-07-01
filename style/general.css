@@ -19,8 +19,8 @@ html {
 }
 
 body {
-	font-family: IRANSans !important;
-  /* background-image: linear-gradient(to right,#ff8a00,#4a3e42); */
+  font-family: IRANSans !important;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
@@ -266,14 +266,14 @@ a {
 
 .section-button {
   position: absolute;
+  top: 72vh;
   right: 14vw;
   width: 20.8vw;
   height: 8.25vh;
   box-shadow: 0 20px 50px -20px rgba(0, 0, 0, .5);
-  border: 1px solid #ebd300;
   background: #ebd300;
   text-align: center;
-  padding-top: 28px; 
+  padding-top: 2.88vh; 
   cursor: pointer;
 }
 
@@ -283,12 +283,23 @@ a {
 
 .section-right {
   position: absolute;
-  /* margin-top: -500px; */
+  top: 30vh;
+  left: 55vh;
 }
 
 .section-backtext {
   position: absolute;
+  font-size: 50vh;
+  opacity: 0.1;
+  letter-spacing: -20px;
+  top: -10vh;
+  z-index: -1;
+}
 
+.section-backtext span {
+  display: block;
+  margin-top: -30vh;
+  margin-left: -60vw;
 }
 
 /* .section:first-child {
@@ -469,3 +480,16 @@ a {
   animation: fadeIn 0.5s ease-in;
 }
 /* call us modal end */
+
+.animate {
+  animation: comeRight 0.5s ease-in;
+}
+
+@keyframes comeRight {
+  from {
+    margin-right: -20px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
