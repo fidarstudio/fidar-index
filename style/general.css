@@ -262,6 +262,7 @@ a {
   top: 34vh;
   width: 19vw;
   right: 12vw;
+  font-size: 2vh;
 }
 
 .section-button {
@@ -281,13 +282,35 @@ a {
 .section-right {
   position: absolute;
   top: 30vh;
-  left: 40vw;
+  left: 26vw;
+  font-size: 3.4vh;
+}
+
+.section-right .right-list {
+  display: inline-block;
+  margin-right: 4vw;
+}
+
+.right-list-item {
+  margin: 1vh 0; 
+}
+
+.right-list-item-line {
+  width: 20px;
+  height: 2px;
+  background: #ebd300;
+  display: inline-block;
+}
+
+.right-list-item-number {
+  float: right;
+  margin-left: 2vw;
 }
 
 .section-backtext {
   position: absolute;
   font-size: 50vh;
-  opacity: 0.1;
+  opacity: 0.08;
   letter-spacing: -20px;
   top: vh;
   z-index: -1;
@@ -499,13 +522,7 @@ a {
   animation: comeRight 1.3s ease-in;
 }
 
-@keyframes comeRight {
-  from {
-    margin-right: -20px;
-    opacity: 0;
-  }
-  to {
-    margin-right: 0;
-    opacity: 1;
-  }
+.active-section .section-backtext {
+  animation: fadeInTo1 1.3s ease-in;
 }
+

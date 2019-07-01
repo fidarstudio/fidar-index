@@ -27,6 +27,18 @@
   }
 }
 
+@keyframes fadeInTo1 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.08;
+  }
+}
+
 @keyframes pagenumberdescanim {
   from {
     top: 2px;
@@ -79,5 +91,16 @@
   }
   100% {
     transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes comeRight {
+  from {
+    margin-right: -20px;
+    opacity: 0;
+  }
+  to {
+    margin-right: 0;
+    opacity: 1;
   }
 }
