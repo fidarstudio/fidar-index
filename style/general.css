@@ -481,8 +481,9 @@ a {
 }
 /* call us modal end */
 
-.animate {
+.active-section:nth-child(1) .animate {
   animation: comeRight 0.5s ease-in;
+  color: red;
 }
 
 @keyframes comeRight {

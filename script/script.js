@@ -10,7 +10,7 @@ const mountModal = document.querySelector('#mount-modal');
 
 // // FUNCTIONAL VARS:
 let activeId = 1;
-menuIsOn = false;
+let menuIsOn = false;
 
 // EVENT LISTENERS
 menuBtn.addEventListener('click', openMenuModal);
