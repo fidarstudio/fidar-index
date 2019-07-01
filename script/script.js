@@ -2,8 +2,11 @@
 const cornerDots = document.querySelectorAll('.dot');
 const menuBtn = document.querySelector('#menu-btn');
 const dots = document.querySelectorAll('.page-number-section');
+const callUs = document.querySelector('#call-us');
+const callUsModal = document.querySelector('#call-us-modal');
 const menuModal = document.querySelector('#menu-modal');
-const menuModalXbtn = document.querySelector('#menu-modal-x-btn');
+const xBtns = document.querySelectorAll('.x-btn');
+const mountModal = document.querySelector('#mount-modal');
 
 // // FUNCTIONAL VARS:
 let activeId = 1;
@@ -11,7 +14,10 @@ menuIsOn = false;
 
 // EVENT LISTENERS
 menuBtn.addEventListener('click', openMenuModal);
-menuModalXbtn.addEventListener('click', closeMenuModal);
+callUs.addEventListener('click', showCallUs);
+for(let x of xBtns) {
+  x.addEventListener('click', close);
+}
 for(let dot of cornerDots) {
   dot.addEventListener('click', showMount);
 }
@@ -22,21 +28,35 @@ function whereIsActive() {
 }
 
 function openMenuModal() {
-  menuModal.classList.add('menu-modal-open');
-  menuModal.classList.remove('menu-modal-close-a');
-  menuModal.classList.remove('menu-modal-close-d');
+  menuModal.classList.add('menu-modal-on');
+  menuModal.classList.remove('menu-modal-off-a');
+  menuModal.classList.remove('menu-modal-off-d');
 }
 
-function closeMenuModal() {
-  menuModal.classList.add('menu-modal-close-a');
-  menuModal.classList.remove('menu-modal-open');
+function close() {
+  menuModal.classList.add('menu-modal-off-a');
+  menuModal.classList.remove('menu-modal-on');
+  mountModal.classList.add('mount-off-a');
+  mountModal.classList.remove('mount-on');
+  callUsModal.classList.add('call-us-off-a');
+  callUsModal.classList.remove('call-us-on');
   setTimeout(() => {
-    menuModal.classList.add('menu-modal-close-d');
-  },500);
+    menuModal.classList.add('menu-modal-off-d');
+    mountModal.classList.add('mount-off-d');
+    callUsModal.classList.add('call-us-off-d');
+},500);
 }
 
 function showMount() {
-  
+  mountModal.classList.add('mount-on');
+  mountModal.classList.remove('mount-off-d');
+  mountModal.classList.remove('mount-off-a');
+}
+
+function showCallUs() {
+  callUsModal.classList.add('call-us-on');
+  callUsModal.classList.remove('call-us-off-a');
+  callUsModal.classList.remove('call-us-off-d');
 }
 
 // FUNCTIONS TO RUNB ON PAGE LOAD:
