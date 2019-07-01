@@ -117,11 +117,6 @@ a {
 
 .menu-btn-container:hover .menu-btn-line {
   background: #ebd300;
-  margin-bottom: 11px;
-}
-
-.menu-btn-line:last-child {
-  margin-bottom: 0;
 }
 
 .page-nav {
@@ -249,7 +244,14 @@ a {
   z-index: 999;
   top: 0;
   left: 0;
+}
+
+.menu-modal-open {
   display: block;
+}
+
+.menu-modal-close {
+  display: none;
 }
 
 #menu-wraper {

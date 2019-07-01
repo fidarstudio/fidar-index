@@ -1,6 +1,7 @@
 // // VARS
+const menuBtn = document.querySelector('#menu-btn');
 const dots = document.querySelectorAll('.page-number-section');
-
+const menuModal = document.querySelector('#menu-modal');
 const menuModalXbtn = document.querySelector('#menu-modal-x-btn');
 
 // // FUNCTIONAL VARS:
@@ -8,6 +9,7 @@ let activeId = 1;
 menuIsOn = false;
 
 // EVENT LISTENERS
+menuBtn.addEventListener('click', openMenuModal);
 menuModalXbtn.addEventListener('click', closeMenuModal);
 
 // FUNCTIONS
@@ -15,9 +17,14 @@ function whereIsActive() {
   // console.log(dots);
 }
 
-function closeMenuModal() {
-  console.log(hamid);
+function openMenuModal() {
+  menuModal.classList.add('menu-modal-open');
+  menuModal.classList.remove('menu-modal-close');
+}
 
+function closeMenuModal() {
+  menuModal.classList.add('menu-modal-close');
+  menuModal.classList.remove('menu-modal-open');
 }
 
 // FUNCTIONS TO RUNB ON PAGE LOAD:
@@ -43,3 +50,6 @@ $('.pagenav a').on('click', function (e) {
       },3000);
   }
 });
+
+// COMMENTS
+// add overflow hidden to body when modal is open
