@@ -1,19 +1,34 @@
 // // VARS
 const dots = document.querySelectorAll('.page-number-section');
 
+const menuModalXbtn = document.querySelector('#menu-modal-x-btn');
+
 // // FUNCTIONAL VARS:
 let activeId = 1;
+menuIsOn = false;
 
-document.addEventListener('scroll', (event) => {
-  // console.log(event.type)
-});
+// EVENT LISTENERS
+menuModalXbtn.addEventListener('click', closeMenuModal);
 
+// FUNCTIONS
 function whereIsActive() {
   // console.log(dots);
 }
 
-// // FUNCTIONS TO RUNB ON PAGE LOAD:
+function closeMenuModal() {
+  console.log(hamid);
+
+}
+
+// FUNCTIONS TO RUNB ON PAGE LOAD:
 whereIsActive(1);
+
+// TEMP
+const hamid = 'hamid';
+
+document.addEventListener('scroll', (event) => {
+  // console.log(event.type)
+});
 
 $('.pagenav a').on('click', function (e) {
   if (this.hash !== '') {
