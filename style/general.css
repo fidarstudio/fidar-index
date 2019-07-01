@@ -267,19 +267,6 @@ a {
 
 }
 
-.active-section .section-button {
-  animation: namename 0.3s ease-in;
-}
-
-@keyframes namename {
-  from {
-    margin-left: 960px;
-  }
-  to {
-    margin-left: 1000px;
-  }
-}
-
 /* .section:first-child {
   margin-top: 50px;
 }

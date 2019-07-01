@@ -58,7 +58,7 @@ $('.pagenav a').on('click', function (e) {
 setTimeout(()=>{
   document.querySelector('#section1').classList.add('active-section');
   console.log(document.querySelector('#1'));
-}, 5000);
+}, 2000);
 
 // COMMENTS
 // add overflow hidden to body when modal is open
