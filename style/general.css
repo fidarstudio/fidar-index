@@ -292,19 +292,25 @@ a {
 }
 
 .right-list-item {
-  margin: 1vh 0; 
-}
+  margin: 2.6vh 0;
 
-.right-list-item-line {
-  width: 20px;
-  height: 2px;
-  background: #ebd300;
-  display: inline-block;
 }
 
 .right-list-item-number {
   float: right;
   margin-left: 2vw;
+  border-left: 0.5vh solid #ebd300;
+  padding: 0;
+  padding-left: 1vw;
+}
+
+.right-list-item-title {
+  padding-bottom: 1vh;
+}
+
+.rigth-list-item:hover .right-list-item-number {
+  padding-left: 1.66vw;
+  
 }
 
 .section-backtext {
