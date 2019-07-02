@@ -225,10 +225,10 @@ a {
 }
 
 .wraped {
-  width: 100vw;
-  height: 100vh;
-  margin: 5vh auto;
-  /* box-shadow: 0 0 75px rgba(0, 0, 0, .3); */
+  width: 90vw;
+  height: 833px;
+  margin: 55px auto;
+  box-shadow: 0 0 75px rgba(0, 0, 0, .07);
   padding: 60px 60px;
   text-align: right;
   position: relative;
