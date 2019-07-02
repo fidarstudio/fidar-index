@@ -39,6 +39,7 @@ a {
   bottom: 0;
   width: 100px;
   height: 100%;
+  z-index: 3;
 }
 
 #left-panel {
@@ -90,6 +91,7 @@ a {
   bottom: 0;
   width: 100px;
   height: 100%;
+  z-index: 3;
 }
 
 #right-panel {
@@ -223,10 +225,10 @@ a {
 }
 
 .wraped {
-  width: 90vw;
-  height: 90vh;
+  width: 100vw;
+  height: 100vh;
   margin: 5vh auto;
-  box-shadow: 0 0 75px rgba(0, 0, 0, .3);
+  /* box-shadow: 0 0 75px rgba(0, 0, 0, .3); */
   padding: 60px 60px;
   text-align: right;
   position: relative;
@@ -237,11 +239,11 @@ a {
   height: 17px;
   position: absolute;
   top: 30px;
-  left: 30px;
+  left: 110px;
   background: #ebd300;
   border-radius: 50px;
   cursor: pointer;
-  animation: jello-horizontal 1.8s both infinite;
+  /* animation: jello-horizontal 1.8s both infinite; */
 }
 
 .section-header {
@@ -273,7 +275,7 @@ a {
   height: 8.25vh;
   font-size: 2.5vh;
   box-shadow: 0 20px 50px -20px rgba(0, 0, 0, .5);
-  background: #ebd300;
+  /* background: #ebd300; */
   text-align: center;
   padding-top: 2.2vh; 
   cursor: pointer;
@@ -282,8 +284,9 @@ a {
 .section-right {
   position: absolute;
   top: 30vh;
-  left: 26vw;
+  left: 20.2vw;
   font-size: 3.4vh;
+  cursor: pointer;
 }
 
 .section-right .right-list {
@@ -299,18 +302,31 @@ a {
 .right-list-item-number {
   float: right;
   margin-left: 2vw;
-  border-left: 0.5vh solid #ebd300;
-  padding: 0;
+  border-left: 0.19vh solid #ebd300;
+  padding-right: 1vw;
   padding-left: 1vw;
 }
 
 .right-list-item-title {
   padding-bottom: 1vh;
+  padding-right: 1.3vw;
+  padding-left: 0vw;
 }
 
-.rigth-list-item:hover .right-list-item-number {
-  padding-left: 1.66vw;
-  
+.right-list-item:hover {
+  color: #ebd300;
+}
+
+.right-list-item:hover .right-list-item-number {
+  padding-left: 2vw;
+  padding-right: 0;
+  border-color: #000;
+  /* color: #ebd300; */
+}
+
+.right-list-item:hover .right-list-item-title {
+  padding-right: 0;
+  padding-left: 1.3vw;
 }
 
 .section-backtext {
@@ -384,16 +400,19 @@ a {
 /* the general x btn in all modals start */
 .x-btn {
   position: absolute;
-  top: 60px;
-  right: 60px;
+  top: 6.5vh;
+  right: 5.6vw;
   width: 50px;
   height: 50px;
   cursor: pointer;
+  z-index: 3;
 }
 
 .x-btn .line {
   width: 45px;
   height: 1px;
+  /* transition-timing-function: cubic-bezier(.87,.95,.95,.67); */
+  transition-timing-function: cubic-bezier(1, 0.5, 0.38, 1.2), cubic-bezier(1, 0.5, 0.38, 1.2), cubic-bezier(1, 0.5, 0.38, 1.2);
 }
 
 .x-btn .line:first-child {
@@ -416,6 +435,48 @@ a {
   background: #ddd;
 }
 /* the general x btn in all modals end */
+
+/* the general grow effect on btns start */
+.fill{
+  -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+  /* background: #ebd300; */
+  /* padding: 2vh initial !important; */
+}
+
+.fill:before{
+  position:absolute;  
+  content:"";
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:-1;
+  opacity:0;
+  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.fill:after {
+  content: "";
+  position: absolute;
+  background: #ebd300;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -2;
+  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+}
+.fill:hover{
+  color:white;
+  border: 0px #ebd300 solid;
+}
+.fill:hover:before {
+  opacity: .8;
+}
+.fill:hover:after {
+  top: 0;
+}
+/* the general grow effetc on btns end */
 
 /* menu modal start */
 #menu-modal {
@@ -512,6 +573,13 @@ a {
   opacity: 0;
 }
 
+.deactive-section .section-backtext {
+  opacity: 0;
+}
+
+.active-section .section-backtext {
+  opacity: 0.08;
+}
 .active-section .animate {
   opacity: 1;
 }
@@ -532,3 +600,19 @@ a {
   animation: fadeInTo1 1.3s ease-in;
 }
 
+/* scrollbar styling start */
+::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #ebd300;
+}
+
+/* scrollbar styli9ng end */

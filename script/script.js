@@ -61,7 +61,7 @@ function showCallUs() {
 }
 
 // FUNCTIONS TO RUNB ON PAGE LOAD:
-whereIsActive(activeId);
+// whereIsActive(activeId);
 
 // TEMP
 const hamid = 'hamid';
@@ -83,6 +83,10 @@ $('.pagenav a').on('click', function (e) {
       },3000);
   }
 });
+
+setTimeout(() => {
+  whereIsActive(activeId);
+}, 2500);
 
 // COMMENTS
 // add overflow hidden to body when modal is open
