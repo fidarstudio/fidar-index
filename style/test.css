@@ -1,0 +1,23 @@
+@keyframes menuitemtitleanim {
+  0% {
+    margin-right: 2vw;
+  }
+  90% {
+    margin-right: 0.9vw;
+  }
+  100% {
+    margin-right: 1vw;
+  }
+}
+
+@keyframes menuitemnumberanim {
+  0% {
+    margin-right: 2vw;
+  }
+  90% {
+    margin-right: 0.9vw;
+  }
+  100% {
+    margin-right: 1vw;
+  }
+}

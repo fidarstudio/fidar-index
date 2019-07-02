@@ -108,6 +108,7 @@ a {
 
 .menu-btn-container {
   cursor: pointer;
+  animation: menubtncontaineranim 6s cubic-bezier(1,1,1,1) infinite;
 }
 
 .menu-btn-line {
@@ -115,6 +116,13 @@ a {
   width: 23px;
   margin-bottom: 7px;
   background: #333;
+}
+
+.menu-btn-line:first-child {
+  animation: menubtnlineanim 4s ease-in-out infinite reverse;
+}
+.menu-btn-line:last-child {
+  animation: menubtnlineanim 4s ease-in-out infinite;
 }
 
 .menu-btn-container:hover .menu-btn-line {
@@ -222,6 +230,7 @@ a {
   width: 100%;
   height: 100vh;
   scroll-snap-align: center;
+  position: relative;
 }
 
 .wraped {
@@ -232,6 +241,10 @@ a {
   padding: 60px 60px;
   text-align: right;
   position: relative;
+  /* border-top-right-radius: 30px; */
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  z-index: 0;
 }
 
 .wraped .dot {
@@ -452,7 +465,8 @@ a {
   left:0;
   z-index:-1;
   opacity:0;
-  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  -webkit-transition: all 1000ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  /* -webkit-transition: all 1000ms; */
 }
 
 .fill:after {
@@ -464,14 +478,15 @@ a {
   right: 0;
   top: 100%;
   z-index: -2;
-  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+  -webkit-transition: all 1000ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+  /* -webkit-transition: all 1000ms;  */
 }
 .fill:hover{
-  color:white;
-  border: 0px #ebd300 solid;
+  /* color: white; */
+  /* border: 0px #ebd300 solid; */
 }
 .fill:hover:before {
-  opacity: .8;
+  /* opacity: .8; */
 }
 .fill:hover:after {
   top: 0;
@@ -506,6 +521,43 @@ a {
   height: 100%;
   background: #ebd300;
   position: relative;
+}
+
+.menu-menu-container {
+  position: absolute;
+  background: #ccc;
+  top: 20vh;
+  left: 30vw;
+  width: 40vw;
+  height: 40vh;
+}
+
+.menu-item {
+  text-align: right;
+  font-weight: 900;
+  font-size: 5vh;
+  cursor: default;
+}
+
+.menu-item-number {
+  display: inline-block;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+.menu-item-title {
+  display: inline-block;
+  /* margin-right: 2vw; */
+}
+
+.menu-item:hover .menu-item-number {
+  animation: menuitemnumberanim 0.3s ease-out;
+  margin-right: -5vw;
+}
+.menu-item:hover .menu-item-title {
+  color: whitesmoke;
+  animation: menuitemtitleanim 0.3s ease-out;
+  margin-right: 1vw;
 }
 /* menu modal end */
 
@@ -615,4 +667,17 @@ a {
 	background-color: #ebd300;
 }
 
-/* scrollbar styli9ng end */
+/* scrollbar styling end */
+
+/* all the patterns start */
+.pattern-back {
+  background-image: url('../images/pattern.png');
+}
+
+#pattern-back-1 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  z-index: -1;
+}
+/* all the patterns end */
