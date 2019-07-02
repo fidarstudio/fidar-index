@@ -349,6 +349,7 @@ a {
   letter-spacing: -20px;
   top: vh;
   z-index: -1;
+  cursor: default;
 }
 
 .section-backtext span {
@@ -679,7 +680,8 @@ a {
   height: 400px;
   position: absolute;
   top: 800px;
-  left: 100px;
-  z-index: -9;
+  left: 150px;
+  z-index: 0;
+  background: #ccc;
 }
 /* all the patterns end */
