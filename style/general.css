@@ -244,7 +244,7 @@ a {
   /* border-top-right-radius: 30px; */
   border-top: 1px solid transparent;
   border-right: 1px solid transparent;
-  z-index: 0;
+  z-index: 10;
 }
 
 .wraped .dot {
@@ -252,7 +252,7 @@ a {
   height: 17px;
   position: absolute;
   top: 30px;
-  left: 110px;
+  left: 30px;
   background: #ebd300;
   border-radius: 50px;
   cursor: pointer;
@@ -678,6 +678,8 @@ a {
   width: 400px;
   height: 400px;
   position: absolute;
-  z-index: -1;
+  top: 800px;
+  left: 100px;
+  z-index: -9;
 }
 /* all the patterns end */
